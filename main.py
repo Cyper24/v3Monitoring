@@ -19,7 +19,7 @@ response = requests.request("GET", url, data=payload, headers=headers)
 
 pages = {
     "Dashboard": [
-        st.Page("https://v3monitoring.streamlit.app/dashboard", title="Dashboard", icon=":material/home:"),
+        st.Page("dashboard.py", title="Dashboard", icon=":material/home:"),
     ],
     "Monitoring": [
         st.Page("penjadwalan.py", title="Cek Load Penjadwalan KT",icon=":material/menu:"),
